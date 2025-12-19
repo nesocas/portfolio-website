@@ -6,9 +6,26 @@
 }
 
 body {
-  background-color: #f5e7e9;
+  background: linear-gradient(
+    180deg,
+    #f8eff1 0%,
+    #faf7f8 40%,
+    #fdfcfd 100%
+  );
   color: #1f2933;
   line-height: 1.6;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 233, 236, 0.4),
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Header */
@@ -35,7 +52,7 @@ body {
   margin-top: 0.3rem;
 }
 
-.linkedin-link {
+.linkedin-link, .github-link {
   font-size: 0.9rem;
   color: #1f2933b7;
   background: #eef1f5;
@@ -47,26 +64,7 @@ body {
     4px 4px 10px rgba(0, 0, 0, 0.12)
 }
 
-.linkedin-link:hover {
-  background: #f5f7fa;
-  transform: translateY(-2px);
-  box-shadow:
-    4px 4px 10px rgba(0, 0, 0, 0.12)
-}
-
-.github-link {
-  font-size: 0.9rem;
-  color: #1f2933b7;
-  background: #eef1f5;
-  padding: 0.3rem 0.7rem;
-  border-radius: 12px;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow:
-    4px 4px 10px rgba(0, 0, 0, 0.12)
-}
-
-.github-link:hover {
+.linkedin-link:hover, .github-link:hover {
   background: #f5f7fa;
   transform: translateY(-2px);
   box-shadow:
@@ -169,5 +167,5 @@ footer {
   bottom: -20px;
   right: -20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  border: 4px solid #f8f7fb;
+  border: 4px solid #faf7f8;
 }
