@@ -144,7 +144,7 @@ footer {
   padding: 2rem 1.5rem;
   background: linear-gradient(145deg, #fdfafc, #faf7f8);
   border-radius: 18px;
-  max-width: 900px;
+  max-width: 400px;
   margin: 3rem auto;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.05);
   border: 2px solid #eef1f5;
@@ -155,4 +155,26 @@ footer {
   justify-content: center;
   gap: 0.7rem;
   flex-wrap: wrap;
+}
+
+.about-section {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(145deg, #fdfafc7d, #faf7f87d);
+  border-radius: 18px;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.05);
+  border: 2px solid #eef1f5; /* dark pink frame, matches Contact box */
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
