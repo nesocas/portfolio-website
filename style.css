@@ -52,7 +52,7 @@ body {
 }
 
 .small-photo {
-  width: 130px; height: 130px;
+  width: 110px; height: 110px;
   object-fit: cover;
   border-radius: 15px;
   position: absolute;
