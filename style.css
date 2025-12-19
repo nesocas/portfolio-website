@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fff8f9;
+  background-color: #f5e7e9;
   color: #1f2933;
   line-height: 1.6;
 }
@@ -23,6 +23,54 @@ body {
 .hero p {
   font-size: 1.1rem;
   color: #555;
+}
+
+.subtitle {
+  margin-bottom: 0.6rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.linkedin-link {
+  font-size: 0.9rem;
+  color: #1f2933b7;
+  background: #eef1f5;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.12)
+}
+
+.linkedin-link:hover {
+  background: #f5f7fa;
+  transform: translateY(-2px);
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.12)
+}
+
+.github-link {
+  font-size: 0.9rem;
+  color: #1f2933b7;
+  background: #eef1f5;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.12)
+}
+
+.github-link:hover {
+  background: #f5f7fa;
+  transform: translateY(-2px);
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.12)
 }
 
 /* Sections */
@@ -46,10 +94,13 @@ h2 {
 }
 
 .skills li {
-  background: #ffe9ec;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  background: linear-gradient(145deg, #eef1f5, #f5f7fa);
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
   font-size: 0.9rem;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.12)
+
 }
 
 /* Projects */
@@ -59,10 +110,18 @@ h2 {
 }
 
 .project-card {
-  background: #ffe9ec;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #eef1f5, #f5f7fa);
+  padding: 1.6rem;
+  border-radius: 18px;
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    12px 12px 30px rgba(0, 0, 0, 0.12)
 }
 
 /* Footer */
