@@ -6,22 +6,23 @@ This is my personal portfolio, thats showcases a small introduction, skills and 
 https://nesocas.github.io/portfolio-website/
 
 ## Features
-Social Link Buttons: Working buttons that take you to my LinkedIn page and GitHub page.
-About Me Section: Small introduction with a soft framed content.
-Skills Section: Displays my key technical skills in small badges.
-Projects Section: Displays main projects in functional buttons that will take you to it.
-Contact Me: Provides a link that directly takes you to your main email app, providing my email automatically.
-Responsive Design: Works on both desktop and mobile devices.
+- Social Link Buttons: Working buttons that take you to my LinkedIn page and GitHub page.
+- About Me Section: Small introduction with a soft framed content.
+- Skills Section: Displays my key technical skills in small badges.
+- Projects Section: Displays main projects with functional pop-ups that will take you to their live page or code.
+- Contact Me: Provides a link that directly takes you to your main email app, providing my email automatically.
+- Responsive Design: Works on both desktop and mobile devices.
 
 ## Technologies Used
 ### HTML 5
 ### CSS3 (including flexbox and grid layout)
+### JavaScript
 ### Git & GitHub Pages for version control and hosting
 
 ## Run It Locally
 1. Clone the repository: git clone https://github.com/nesocas/portfolio-website.git
 2. Open index.html in your preferred browser or using Live Server
-3. Make edits in style.css or index.html if needed
+3. Make edits in .css, .html or .js as needed
 
 ## Contributing
 This portfolio is maintained by Inês Bentes. For suggestions or improvements, feel free to open an issue or contact via GitHub.
