@@ -58,12 +58,26 @@
   <section class="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-      <h3>Memory Photobook</h3>
-      <p>
-        A simple memory photobook website to learn html, css and javascript concepts. A small fun thing to show my friends.
-      </p>
+    <div class="project-card" id="photobook-card" style="cursor: pointer;">
+  <h3>Memory Photobook</h3>
+  <p>
+    A simple memory photobook website to learn html, css and javascript concepts. A small fun thing to show my friends.
+  </p>
+  </div>
+
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p>How would you like to view this project?</p>
+      
+      <div class="modal-actions">
+        <a href="https://github.com/nesocas/memory-photobook" target="_blank" class="modal-link-btn repo-btn">View Code (GitHub)</a>
+        <a href="https://nesocas.github.io/memory-photobook/index.html" target="_blank" class="modal-link-btn live-btn">View Live Page</a>
+      </div>
     </div>
+  </div>
+
+  <script src="script.js"></script>
 
     <div class="project-card">
       <h3>Password Security Tool</h3>

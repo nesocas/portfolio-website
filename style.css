@@ -147,3 +147,80 @@ footer {
   gap: 0.7rem;
   flex-wrap: wrap;
 }
+
+/* Popup Background Overlay */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dim the background */
+  backdrop-filter: blur(4px); /* Blur effect */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Box */
+.modal-content {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Close Button (X) */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #777;
+}
+
+.close-btn:hover { color: #1f2933; }
+
+/* Popup Buttons */
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-link-btn {
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.repo-btn {
+  background: #eef1f5;
+  color: #1f2933;
+}
+
+.live-btn {
+  background: #ffe9ec; 
+  color: #1f2933;
+  border: 1px solid #ffc1cc;
+}
+
+.modal-link-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
